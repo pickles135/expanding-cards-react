@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 
 class Panel extends Component {
   render() {
+    let backgroundImage = {
+      backgroundImage: `url(${this.props.bgImg})`
+    }
     return (
-      <div>
-        <h1>Here is a panel</h1>
+      <div className="panel active">
+        <div style={backgroundImage}>
+          {this.props.text}
+        </div>
       </div>
     )
   }
 };
 
-export default Panel
+export default Panel;
