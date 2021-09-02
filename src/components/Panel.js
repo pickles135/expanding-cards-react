@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class Panel extends Component {
   render() {
-    let image = this.props.bgImg
+    let image = this.props.img;
     return (
       <div className="panel active">
-        <img src={image} />
-        <h3>{this.props.text}</h3>
+        <img className='img' src={image} />
+        <h3>Testing</h3>
       </div>
     )
   }

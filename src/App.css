@@ -1,11 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-* {
+* { 
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli', sans-serif; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,22 +20,13 @@ body {
   width: 90vw;
 }
 
-.panel img {
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  transition: flex 0.7 ease-in;
-  -webkit-transition: flex 0.7 ease-in;
-  -moz-transition: flex 0.7 ease-in;
-  -ms-transition: flex 0.7 ease-in;
-  -o-transition: flex 0.7 ease-in;
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.panel .img {
   height: 80vh;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -43,20 +35,7 @@ img {
   -o-border-radius: 50px;
 }
 
-.panel h3 {
+.panel {
   color: #fff;
-  font-size: 24px;
-  position: absolute;
-  bottom: 85px;
-  left: 65px;
-  margin: 0;
-  /* opacity: 0; */
+  flex: 0.5;
 }
-
-/* .panel .active {
-  flex: 5;
-} */
-
-/* .panel .active h3 { */
-  /* opacity: 1;
-} */
